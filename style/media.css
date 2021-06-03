@@ -1,0 +1,132 @@
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) { 
+    .heading{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--main-color);
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    header{
+        height: 900px;
+    }
+    .navbar__list{
+        width: 100%;
+        padding: 2rem 0 ;
+    }
+    .header__form input{
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .header{
+        padding-top:7rem ;
+    }
+    .header__text::before{
+        top: -70%;
+    }
+    .header__img{
+        top: 85%;
+    }
+    .special__articles__cart{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .special__articles__cart p{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+    .Propositions__img{
+        width: 90%;
+        margin: auto;
+    }
+    .Propositions__text{
+        width: 90%;
+        margin: 2rem auto;
+    }
+    .features__articles__cart{
+        width: 70%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    video[poster]{
+        height:340px;
+        width:500px;
+        border: none;
+        border-radius: 20px;   
+
+    }
+    .media__play i {
+        top: 7em;
+        left: 9em;
+    }
+    .media i::after{
+        top: -40%;
+        left: -90%;
+    }
+    .achievement__grid__container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .achievement__data__content{
+        width: 40%;
+        margin: 1rem auto;
+    }
+    .Pricing{
+        text-align: center;
+    }
+    .Pricing__articles__cart{
+        width: 70%;
+        margin: 1rem auto;
+    }
+    .app__imgs__card{
+        width: 60%;
+    }
+    .joining__text{
+        font-size: 1rem;
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .joining .btn{
+        margin: 2rem auto;
+        width: 30%;
+        padding: 1rem 0;
+    }
+    .team__box-holder__member{
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .footer__content{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .footer__form{
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
