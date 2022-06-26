@@ -1,17 +1,24 @@
 /********************* Global Code ****************/
+html {
+    scroll-behavior: smooth;
+  }
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 } 
 body{
     font-family: 'Cabin', sans-serif;
     font-size: 15px;
+    scroll-behavior: smooth;
+
 }
 :root{
     --main-color:#7550E3 ;
     --sec-color : #FB397D;
     --main-bg   : #000;
+
 } 
 span , a , img {
     display: inline-block;
@@ -39,6 +46,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 .btn{
     border: 2px solid #a883e9;
@@ -103,6 +111,9 @@ nav{
 }
 .navbar__list{
     width: 60%;
+}
+.mobile__nav{
+    display: none;
 }
 .header{
     position: relative;
@@ -608,8 +619,29 @@ footer .heading{
 }
 /************** End form  ****************/ 
 
-
-
+/*media Query */
+@media (max-width: 47.9375em) {
+    .navbar__list{
+        display: none;
+    }
+    .mobile__nav{
+        display: flex;
+        position: fixed;
+        background: #fff;
+        bottom: 8%;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: auto;
+        padding: 15px 20px;
+        border-radius: 30px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        z-index: 1111;
+    }
+    .fixed__nav_link{
+        color: var(--main-color);
+    }
+}
 
 
 
