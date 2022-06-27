@@ -277,7 +277,7 @@ nav {
 .media__play i {
   position: relative;
   top: 10em;
-  left: 16em;
+  left: 18em;
   font-size: 2rem;
   color: #fff;
   margin: 10px;
@@ -286,8 +286,8 @@ nav {
 .media i::after {
   content: "";
   position: absolute;
-  top: -40%;
-  right: -80%;
+  top: -1.4rem;
+  right: -1.3rem;
   display: inline-block;
   background-color: var(--sec-color);
   width: 80px;
@@ -490,7 +490,6 @@ video img {
   background-color: #fff;
   color: var(--sec-color);
   transition: 0.5s;
-  padding: 0;
 }
 .joining .btn:hover {
   background-color: var(--main-color);
@@ -618,7 +617,10 @@ footer .heading {
   margin: 15px 0;
 }
 /************** End form  ****************/
-
+.icons-team {
+  flex-wrap: nowrap;
+  width: 85%;
+}
 /*media Query */
 
 @media (max-width: 74.9375em) {
@@ -653,13 +655,23 @@ footer .heading {
   .achievement__data__content__detail {
     padding-left: unset;
   }
-  video[poster] {
+  .media {
     position: relative;
   }
   .media__play i {
     position: absolute;
-    top: 50%;
+    top: 10rem !important;
+    left: 20rem !important;
     z-index: 5;
+  }
+  .proposition__text__apps__android,
+  .proposition__text__apps__ios {
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+
+  .no-wrap {
+    flex-wrap: nowrap;
   }
 }
 @media (max-width: 47.9375em) {
@@ -694,12 +706,21 @@ footer .heading {
   .achievement__data__content__detail {
     padding-left: unset;
   }
-  video[poster] {
+  .media {
     position: relative;
   }
   .media__play i {
     position: absolute;
-    top: 50%;
+    top: 10rem !important;
+    left: 14rem !important;
     z-index: 5;
+  }
+  .proposition__text__apps__android,
+  .proposition__text__apps__ios {
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+  .no-wrap {
+    flex-wrap: nowrap;
   }
 }
